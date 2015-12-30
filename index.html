@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <header>
+        <div class="navbar-fixed">
+            <nav class=" grey darken-4">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">NET GAME
+                    </a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                        <li><a href="sass.html">Game</a></li>
+                        <li><a href="badges.html">Web</a></li>
+                        <li><a href="collapsible.html">UI DEMO</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="sass.html">Game</a></li>
+                        <li><a href="badges.html">Web</a></li>
+                        <li><a href="collapsible.html">UI DEMO</a></li>
+                        <li><a href="mobile.html">More</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="wrap-container">
+        <div class="container">
+            <!-- Page Content goes here -->
+            <div class="action-content">
+                <div class="row">
+                    <div class="col s12 m4 transparent">
+                        <div class="card transparent">
+                            <div class="card-image">
+                                <img src="images/vongquaycsm.png">
+                            </div>
+                            <div class="card-content">
+                                <p class="white-text">Quay số trúng thưởng.</p>
+                            </div>
+                            <div class="card-action center">
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Chơi Ngay</a>
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Đăng nhập bằng FACEBOOK</h4>
+                                        <p class="row"><img src="images/FBloginbutton.png"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 offset-m4 m4 transparent">
+                        <div class="card transparent">
+                            <div class="card-image">
+                                <img src="images/vongquaycsm.png">
+                            </div>
+                            <div class="card-content">
+                                <p class="white-text">Thành viên</p>
+                                <div class="row">
+                                    <div class="col m6"><a class="modal-trigger" href="#registry">Đăng Ký</a></div>
+                                    <div class="col m6"><a class="modal-trigger" href="#login">Đăng Nhập</a></div>
+                                    <div id="registry" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Đăng Ký</h4>
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s6">
+                                                            <input id="first_name" type="text" class="validate">
+                                                            <label for="first_name">Họ</label>
+                                                        </div>
+                                                        <div class="input-field col s6">
+                                                            <input id="last_name" type="text" class="validate">
+                                                            <label for="last_name">Tên</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="user-name" type="text" class="validate">
+                                                            <label for="user-name">Tên đăng nhập</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="password" type="password" class="validate">
+                                                            <label for="password">Mật khẩu</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="email" type="email" class="validate">
+                                                            <label for="email">Email</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <button class="btn">Đăng ký</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                                        </div>
+                                    </div>
+                                    <div id="login" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Đăng Nhập</h4>
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="user-name" type="text" class="validate">
+                                                            <label for="user-name">Tên đăng nhập</label>
+                                                        </div>
+                                                        <div class="col s12"><a href="#">Quên tên đăng nhập?</a></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input id="password" type="password" class="validate">
+                                                            <label for="password">Mật khẩu</label>
+                                                        </div>
+                                                        <div class="col s12"><a href="#">Quên mật khẩu?</a></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <a id="login-btn" href="#gifcode" class="btn modal-trigger">Đăng nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                                        </div>
+                                    </div>
+                                    <div id="gifcode" class="modal">
+                                        <div class="modal-content">
+                                            <form class="col s12">
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                        <input id="code" type="text" class="validate">
+                                                        <label for="code">Nhập Code</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                        <button class="btn">Chơi</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Hủy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+$(".button-collapse").sideNav();
+$(document).ready(function() {
+    $('ul.tabs').tabs();
+    $('.modal-trigger').leanModal();
+    $('.parallax').parallax();
+
+    $('#login-btn').click(function() {
+        $('#login').closeModal();
+    });
+});
+</script>
+
+</html>

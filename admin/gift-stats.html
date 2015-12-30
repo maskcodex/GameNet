@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>GIFT STATS PAGE</title>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <header>
+        <div class="navbar-fixed">
+            <nav class=" grey darken-4">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">NET GAME
+                    </a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                        <li><a href="sass.html">Game</a></li>
+                        <li><a href="badges.html">Web</a></li>
+                        <li><a href="collapsible.html">UI DEMO</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="sass.html">Game</a></li>
+                        <li><a href="badges.html">Web</a></li>
+                        <li><a href="collapsible.html">UI DEMO</a></li>
+                        <li><a href="mobile.html">More</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="wrap-container">
+        <h3 class="center">Thống kê Quà</h3>
+        <div class="table-list">
+            <div class="row">
+                <div class="col s4 center">
+                    <div class="red darken-2 white-text">
+                    <p>Tổng số quà tặng</p>
+                    <p class="number-stats">1000</p>
+                    </div>
+                </div>
+                <div class="col s4 center">
+                    <div class="red darken-2 white-text">
+                    <p>Số quà đã tặng</p>
+                    <p class="number-stats">500</p>
+                    </div>
+                </div>
+                <div class="col s4 center">
+                    <div class="red darken-2 white-text">
+                    <p>Số quà còn lại</p>
+                    <p class="number-stats">500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul id="nav-mobile" class="side-nav fixed teal accent-2" style="width: 240px; top:65px">
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Quản Lý Chung</a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                            <li><a href="color.html">Chỉnh sửa thông tin web</a></li>
+                            <li><a href="grid.html">Thống kê</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Quản Lý Quà</a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                            <li><a href="color.html">Danh mục quà</a></li>
+                            <li><a href="grid.html">Thống kê</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Quản Lý User</a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                            <li><a href="color.html">Danh sách user</a></li>
+                            <li><a href="grid.html">Grid</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Quản Lý Mã Code</a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                            <li><a href="color.html">Danh sách mã code</a></li>
+                            <li><a href="grid.html">Tạo mã code</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Quản Lý Game</a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                            <li><a href="color.html">Danh sách Game</a></li>
+                            <li><a href="grid.html">Thống kê</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script type="text/javascript">
+$(".button-collapse").sideNav();
+$(document).ready(function() {
+    $('ul.tabs').tabs();
+    $('.modal-trigger').leanModal();
+});
+</script>
+
+</html>

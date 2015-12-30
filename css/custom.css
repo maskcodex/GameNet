@@ -1,0 +1,41 @@
+body {
+	background: url('../images/gamebg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#stopwatch {
+	text-align: center;
+	padding: 10px;
+}
+
+#action-btn > div {
+	text-align: center;
+}
+
+.parallax-container {
+    height: 600px;
+}
+
+.nav-wrapper {
+	
+}
+
+#wrap-container {
+	flex: 1 0 auto;
+  
+}
+
+.action-content {
+	margin-top: 100px;
+	min-height: 300px;
+}
+
+#game-canvas {
+	margin: 0 auto;
+}
